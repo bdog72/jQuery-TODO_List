@@ -1,10 +1,5 @@
 import './styles/screen.scss'
-
-const main = () => {
-  document.querySelector('h1').textContent += '?'
-}
-
-document.addEventListener('DOMContentLoaded', main)
+import './todoList'
 
 // HERE BE DRAGONS... and webpack. Don't touch.
 if (process.env.NODE_ENV !== 'production') require('./index.html')
